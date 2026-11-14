@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:text="FallGuard 手机跌落监测"
+      android:textSize="18sp" android:textStyle="bold"
+      android:layout_marginBottom="8dp"/>
+  <LinearLayout android:orientation="horizontal"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp">
+    <Button android:id="@+id/start" android:layout_width="0dp"
+        android:layout_weight="1" android:layout_height="wrap_content"
+        android:text="启动"/>
+    <Button android:id="@+id/stop" android:layout_width="0dp"
+        android:layout_weight="1" android:layout_height="wrap_content"
+        android:text="停止"/>
+    <Button android:id="@+id/refresh" android:layout_width="0dp"
+        android:layout_weight="1" android:layout_height="wrap_content"
+        android:text="刷新"/>
+  </LinearLayout>
+  <TextView android:id="@+id/status"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:text="状态：未启动" android:textSize="13sp"
+      android:layout_marginBottom="8dp"/>
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/log"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="还没有记录"
+        android:fontFamily="monospace" android:textSize="12sp"/>
+  </ScrollView>
+</LinearLayout>
